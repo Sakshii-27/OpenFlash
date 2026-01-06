@@ -9,7 +9,6 @@ OpenFlash is a **frontend-only** learning tool built with **Vanilla JavaScript**
 - **📂 Deck Management**: Create, edit, and delete custom flashcard decks.
 - **🧠 Smart Study Mode**: Interactive study sessions with "Good" / "Again" tracking.
 - **🎨 Beautiful UI**: Modern design with glassmorphism, gradients, and smooth animations.
-- **💾 Local Persistence**: All your data is saved instantly to your browser's LocalStorage. No login required.
 - **🔔 Toast Notifications**: Friendly non-blocking alerts for user feedback.
 - **📱 Responsive**: Works great on desktop and mobile.
 
@@ -100,22 +99,14 @@ We love beginners! If you want to add a feature or fix a bug, follow these steps
    ```bash
    git checkout -b my-cool-feature
    ```
-4. **Make Changes**. Try changing colors in `css/style.css` or adding a new message in `js/views/home.js`.
-5. **Test** your changes by running the local server.
-6. **Commit and Push**:
+4. **Test** your changes by running the local server.
+5. **Commit and Push**:
    ```bash
    git add .
    git commit -m "Added a cool feature"
    git push origin my-cool-feature
    ```
-7. **Open a Pull Request** on GitHub.
-
-### Ideas for Contributions
-- [ ] Add a "Night Mode" toggle.
-- [ ] Allow export/import of decks as JSON files.
-- [ ] Add sound effects when flipping cards.
-- [ ] Improve the mobile layout for the study screen.
-
+6. **Open a Pull Request** on GitHub.
 ---
 
 ## 📄 License
@@ -123,5 +114,3 @@ We love beginners! If you want to add a feature or fix a bug, follow these steps
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-
-> Built with ❤️ by the OpenFlash Community.
