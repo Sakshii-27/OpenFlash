@@ -15,11 +15,49 @@
 </head>
 
 <body>
+    <!-- <button id="themeToggle" class="btn btn-primary">
+    🌙 Dark Mode
+    </button> -->
+    <header class="header">
+    <button id="themeToggle" class="btn btn-primary">
+        🌙 Dark Mode
+    </button>
+    </header>
+
+
     <div id="app">
         <!-- Views will be rendered here -->
     </div>
 
     <script type="module" src="js/app.js?v=3"></script>
+    <script>
+    const toggleBtn = document.getElementById("themeToggle");
+    const root = document.documentElement;
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        root.setAttribute("data-theme", savedTheme);
+        toggleBtn.textContent =
+            savedTheme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+    }
+
+    // Toggle theme
+    toggleBtn.addEventListener("click", () => {
+        const currentTheme = root.getAttribute("data-theme");
+
+        if (currentTheme === "dark") {
+            root.setAttribute("data-theme", "light");
+            localStorage.setItem("theme", "light");
+            toggleBtn.textContent = "🌙 Dark Mode";
+        } else {
+            root.setAttribute("data-theme", "dark");
+            localStorage.setItem("theme", "dark");
+            toggleBtn.textContent = "☀️ Light Mode";
+        }
+    });
+</script>
+
 </body>
 
 </html>
