@@ -4,10 +4,6 @@
 
 OpenFlash is a **frontend-only** learning tool built with **Vanilla JavaScript**. It is designed to be the perfect starting point for developers who want to understand how Single Page Applications (SPAs) work using standard web technologies.
 
-<p align="center">
-  <img src="assets/hero-illustration.png" alt="OpenFlash Hero" width="600">
-</p>
-
 ## 🌟 Features
 
 - **📂 Deck Management**: Create, edit, and delete custom flashcard decks.
