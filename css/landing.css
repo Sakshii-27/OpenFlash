@@ -65,6 +65,11 @@
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+/* More subtle button glow in dark mode */
+.dark .btn-lg {
+    box-shadow: 0 10px 25px -8px rgba(99, 102, 241, 0.18);
+}
+
 .btn-lg:hover {
     transform: translateY(-3px);
     box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.5);
@@ -116,11 +121,11 @@
 
 .feature-card {
     padding: var(--space-xl);
-    background: rgba(255, 255, 255, 0.8);
-    /* Slight transparency */
-    backdrop-filter: blur(10px);
+    background: var(--card-bg);
+    /* Slight transparency in light mode, subtle in dark */
+    backdrop-filter: blur(6px);
     border-radius: var(--radius-lg);
-    border: 1px solid rgba(229, 231, 235, 0.5);
+    border: 1px solid var(--card-border);
     transition: all 0.3s ease;
     text-align: left;
     position: relative;
@@ -142,7 +147,7 @@
 
 .feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-lg);
     border-color: transparent;
 }
 
