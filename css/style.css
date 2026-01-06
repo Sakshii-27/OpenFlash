@@ -162,3 +162,22 @@ textarea:focus {
 .fade-in {
     animation: fadeIn 0.3s ease-out forwards;
 }
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --surface-1: #1e1e1e;
+    --surface-2: #121212;
+    --surface-3: #2a2a2a;
+
+    --text-1: #f1f3f5;
+    --text-2: #dee2e6;
+    --text-3: #adb5bd;
+
+    --primary-light: hsl(var(--primary-hue), 70%, 20%);
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 1.5rem;
+}
+
