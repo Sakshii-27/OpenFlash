@@ -15,6 +15,32 @@
 </head>
 
 <body>
+    <script>
+        // Apply saved or OS preferred theme early to avoid flash
+        (function(){
+            try {
+                const key = 'theme';
+                const saved = localStorage.getItem(key);
+                const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (saved === 'dark' || (!saved && prefersDark)) {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.add('light');
+                }
+            } catch (e) { /* ignore */ }
+        })();
+    </script>
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="#/" class="logo">OpenFlash</a>
+            <nav class="main-nav">
+                <button id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Toggle dark mode">
+                    <span class="visually-hidden">Toggle theme</span>
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </nav>
+        </div>
+    </header>
     <div id="app">
         <!-- Views will be rendered here -->
     </div>

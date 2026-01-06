@@ -1,9 +1,12 @@
 import { StorageManager } from './storage.js';
+import { ThemeManager } from './theme.js';
 
 // Simple Router
 const App = {
     init() {
         this.container = document.getElementById('app');
+        // Initialize theme manager so header toggle is wired and theme is applied
+        try { ThemeManager.init(); } catch (e) { /* ignore if theme module unavailable */ }
         
         // Global error handler for simplicity
         window.addEventListener('hashchange', () => this.handleRoute());

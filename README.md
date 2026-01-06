@@ -9,6 +9,7 @@ OpenFlash is a **frontend-only** learning tool built with **Vanilla JavaScript**
 - **📂 Deck Management**: Create, edit, and delete custom flashcard decks.
 - **🧠 Smart Study Mode**: Interactive study sessions with "Good" / "Again" tracking.
 - **🎨 Beautiful UI**: Modern design with glassmorphism, gradients, and smooth animations.
+- **🌗 Theme Toggle**: Switch between Light and Dark modes; preference is saved to your browser.
 - **🔔 Toast Notifications**: Friendly non-blocking alerts for user feedback.
 - **📱 Responsive**: Works great on desktop and mobile.
 
