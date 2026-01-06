@@ -87,6 +87,20 @@
     /* Space for delete button */
 }
 
+/* Session configuration panel shown before study starts */
+.card-config {
+    margin-bottom: var(--space-lg);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.card-config h3 { margin-bottom: var(--space-sm); }
+.card-config p { color: var(--text-3); margin-bottom: var(--space-sm); }
+.card-config .btn { width: 100%; }
+
 .card-input-fields {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -126,6 +140,12 @@
     perspective: 1000px;
     margin: 0 auto var(--space-lg);
     cursor: pointer;
+}
+
+.scene:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--focus-ring-color);
+    border-radius: var(--radius-lg);
 }
 
 .flashcard {
